@@ -53,5 +53,5 @@ This tool is licensed under the [3-Clause BSD License](http://opensource.org/lic
 
 ## Status
 
-"Early days" : some changes This tool CLI interface assigned feature set is subject to change based on feedback and due to new features.
+"Early days" : some changes can be expected based on feedback and new features.
 
