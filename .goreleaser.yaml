@@ -3,8 +3,8 @@ version: 2
 project_name: godescribe
 
 builds:
-  - id: godescribe
-    # main: ./godescribe
+  - id: main
+    binary: godescribe
     goos:
       - linux
     goarch:
