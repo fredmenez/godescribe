@@ -1,3 +1,5 @@
+version: 2
+
 project_name: godescribe
 
 builds:
@@ -10,12 +12,12 @@ builds:
     ldflags:
       - "-s -w"
 
-archive:
-  format: tar.gz
-  name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
-  files:
-    - README.md
-    - LICENSE
+archives:
+  - id: archive-tar
+    builds:
+      - myproject-build
+    format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 
 release:
   github:
