@@ -4,6 +4,7 @@ project_name: godescribe
 
 builds:
   - id: main
+    main: .
     binary: godescribe
     goos:
       - linux
@@ -15,7 +16,7 @@ builds:
 archives:
   - id: archive-tar
     builds:
-      - myproject-build
+      - main
     format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 
