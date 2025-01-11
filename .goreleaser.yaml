@@ -4,7 +4,7 @@ project_name: godescribe
 
 builds:
   - id: godescribe
-    main: ./cmd/godescribe
+    main: ./godescribe
     goos:
       - linux
     goarch:
